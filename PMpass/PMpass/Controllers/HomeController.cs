@@ -13,10 +13,21 @@ namespace PMpass.Controllers
     {
         public IActionResult Index(CredentialData model)
         {
-            if(model != null)
+            if(model.Username != null && model.OldPasswrod != null && model.NewPassword1 != null && model.NewPassword2 != null)
             {
-                Password password = new Password();
-                ViewData["Message"] = password.Reset(model.Username, model.OldPasswrod, model.NewPassword1, model.NewPassword2);
+                if (model.NewPassword1 == model.NewPassword2)
+                {
+                    Password password = new Password();
+                    ViewData["Message"] = password.Reset(model.Username, model.OldPasswrod, model.NewPassword1, model.NewPassword2);
+                }
+                else
+                {
+                    ViewData["Message"] = "Új jelszó nem egyezik!";
+                }
+            }
+            else
+            {
+                ViewData["Message"] = "";
             }
             return View();
         }

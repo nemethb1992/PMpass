@@ -24,7 +24,7 @@ namespace PMpass.Utility
         public string Reset(string Username, string OldPassword, string NewPassword1, string NewPassword2)
         {
             string returnInfo = "";
-            string server = "tarjan.pmhu.local:636";
+            string server = "192.168.144.21:636";
             string domain = "pmhu.local";
             const int ldapErrorInvalidCredentials = 0x31;
 
@@ -87,7 +87,7 @@ namespace PMpass.Utility
                     //return false;
                     returnInfo = "A felhasználói adatok nem megfelelőek!";
                 }
-                returnInfo = ldapException.Message;
+                //returnInfo = ldapException.Message;
             }
             return returnInfo;
         }

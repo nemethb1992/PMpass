@@ -27,24 +27,23 @@
                     </div>
                     <div class="form-group">
                         <label for="text" id="HeaderLabel" class=" w-100 pt-4 h4 mb-2">Tartományi jelszó frissítés</label>
-                        @*<label for="text" id="HeaderLabel" class=" w-100 pt-4 h4 mb-2"></label>*@
                     </div>
                     <form id='LR_form' asp-action="Index">
                         <div class="form-group">
                             <label for="usr">Tartományi felhasználónév:</label>
-                            <input type="text" class="form-control h5" value="balazs.nemeth" asp-for="Username">
+                            <input type="text" class="form-control h5" value="" asp-for="Username">
                         </div>
                         <div class="form-group">
                             <label for="pwd">Régi jelszó:</label>
-                            <input type="password" class="form-control h5" value="3HgB8Wy3HgB8Wy" asp-for="OldPasswrod">
+                            <input type="password" class="form-control h5" value="" asp-for="OldPasswrod">
                         </div>
                         <div class="form-group">
                             <label for="pwd">Új jelszó:</label>
-                            <input type="password" class="form-control h5" value="Hxx8kahxx8ka" asp-for="NewPassword1">
+                            <input type="password" class="form-control h5" value="" asp-for="NewPassword1">
                         </div>
                         <div class="form-group">
                             <label for="pwd">Új jelszó ismét:</label>
-                            <input type="password" class="form-control h5" value="Hxx8kahxx8ka" asp-for="NewPassword2">
+                            <input type="password" class="form-control h5" value="" asp-for="NewPassword2">
                         </div>
                         <div class="form-group">
                             <input type="submit" value="Mentés" id="save_btn" class="btn btn-dark mt-3 w-100" />
