@@ -1,0 +1,61 @@
+body{
+    color: red;
+    height: 100%;
+	background-color: transparent;
+}
+@font-face {
+    font-family: Mon;
+    src: url(public/fonts/Montserrat-Regular.ttf);
+}
+
+body{    
+background: #ff796d;
+background: -moz-linear-gradient(top, #ff796d 0%, #ef4747 62%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #ff796d 0%,#ef4747 62%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #ff796d 0%,#ef4747 62%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff796d', endColorstr='#ef4747',GradientType=0 );
+height: 100%;
+}
+.colored-fluid{
+    height: 100%;
+    padding: 0px;
+}
+.visible-lg{
+    background-color: aqua;
+}
+.visible-md{
+    background-color: green;
+}
+.visible-sm{
+    background-color: greenyellow;
+}
+.visible-xs{
+    background-color: blue;
+}
+.box-content{
+    padding-bottom: 150px;
+    margin-bottom: 15px;
+}
+.MyContainer {
+    /* 	margin-top: 30px */
+    background-color: White;
+    box-shadow: 1px 5px 13px #3a3a3a;
+}
+label
+{
+	color: #585252 !important;
+}
+#logo-text
+{
+    color: #333333;
+    font-size: smaller;
+}
+button {
+    margin-top: 15px;
+    font-size: 17px !important;
+}
+#info_label
+{
+    margin-bottom: 0px;
+    color: red !important;
+}
