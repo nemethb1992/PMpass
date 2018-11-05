@@ -87,7 +87,7 @@ namespace PMpass.Utility
                     //return false;
                     returnInfo = "A felhasználói adatok nem megfelelőek!";
                 }
-                //returnInfo = ldapException.Message;
+                returnInfo = "Kapcsolódási hiba!";
             }
             return returnInfo;
         }

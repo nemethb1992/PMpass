@@ -17,8 +17,7 @@ namespace PMpass.Controllers
             {
                 if (model.NewPassword1 == model.NewPassword2)
                 {
-                    Password password = new Password();
-                    ViewData["Message"] = password.Reset(model.Username, model.OldPasswrod, model.NewPassword1, model.NewPassword2);
+                    ViewData["Message"] = new Password().Reset(model.Username, model.OldPasswrod, model.NewPassword1, model.NewPassword2);
                 }
                 else
                 {
